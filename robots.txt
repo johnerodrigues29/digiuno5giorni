@@ -1,0 +1,59 @@
+# ===================================================================
+# ROBOTS.TXT - SEO avançado
+# ===================================================================
+
+# -------------------------------
+# Regras gerais para todos os robôs
+# -------------------------------
+User-agent: *
+# Permitir páginas e recursos essenciais
+Allow: /$
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+
+# Bloquear arquivos técnicos e temporários
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*~$
+
+# Bloquear páginas legais ou privadas que não precisam de indexação
+Disallow: /Privacy Policy/
+Disallow: /Termini e Condizioni/
+Disallow: /Note Legali/
+
+# -------------------------------
+# Regras específicas para Googlebot
+# -------------------------------
+User-agent: Googlebot
+# Permitir renderização completa
+Allow: /$
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+# Bloquear arquivos que não precisam ser indexados
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /backup/
+
+# -------------------------------
+# Regras específicas para Bingbot
+# -------------------------------
+User-agent: Bingbot
+# Permitir renderização completa
+Allow: /$
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+# Bloquear arquivos irrelevantes
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /backup/
+
+# -------------------------------
+# Sitemap
+# -------------------------------
+Sitemap: https://digiuno5giorni.it/sitemap.xml
