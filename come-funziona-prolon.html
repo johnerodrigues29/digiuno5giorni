@@ -8,30 +8,30 @@
 
     <!-- Canonical, Favicon, Hreflang -->
     <link rel="canonical" href="https://digiuno5giorni.it/come-funziona-prolon" />
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.ico" sizes="any">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
 
     <link rel="alternate" hreflang="it" href="https://digiuno5giorni.it/come-funziona-prolon" />
     <link rel="alternate" hreflang="x-default" href="https://digiuno5giorni.it/come-funziona-prolon" />
 
     <!-- Preconnect to essential third-party domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 
     <!-- Preload Google Fonts (non-blocking ) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" />
+        
     </noscript>
 
     <!-- 1. Critical CSS for instant rendering of the 'above-the-fold' content -->
@@ -124,11 +124,11 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 </style>
 
     <!-- 2. Defer loading of the full stylesheet -->
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="styles.css?v=20260924" />
 
     <!-- 3. Fallback for browsers with JavaScript disabled -->
     <noscript>
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="styles.css?v=20260924" />
     </noscript>
     
 <!-- Article Schema -->
@@ -138,7 +138,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   "@type": "Article",
   "headline": "ProLon: come funziona davvero la dieta mima digiuno (5 giorni)",
   "description": "Scopri il meccanismo scientifico di ProLon: il programma di 5 giorni che mima il digiuno. Analisi della DMD, struttura e benefici supportati dalla ricerca.",
-  "image": "https://digiuno5giorni.it/images/ProLon-5-Giorni-1080.webp",
+  "image": "images/ProLon-5-Giorni-1080.webp",
   "datePublished": "2025-12-26",
   "dateModified": "2025-12-26",
   "author": {
@@ -197,6 +197,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 }
 </script>
 
+<link rel="preload" href="fonts/karla-variable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
@@ -204,26 +205,27 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-					<a href="/" aria-label="ProLon">
+					<a href="index.html" aria-label="ProLon">
 						<span class="site-title">Digiuno 5 Giorni</span>
 					</a>
 				</div>
-                <ul class="nav-menu">
-                    <li><a href="/#benefits">Benefici</a></li>
-                    <li><a href="/#ingredients">Programma</a></li>
-                    <li><a href="/#science">Scienza</a></li>
-					<li><a href="/#recensioni">Recensioni</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
-                </ul>
+                <ul class="nav-menu" id="siteNavigation">
+                    <li><a href="index.html#benefits">Benefici</a></li>
+                    <li><a href="index.html#ingredients">Programma</a></li>
+                    <li><a href="index.html#science">Scienza</a></li>
+					<li><a href="index.html#recensioni">Recensioni</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li></ul>
                 <a href="https://prolon.it/C4Gg3l" class="header-cta-btn" target="_blank" rel="noopener nofollow sponsored">Scopri ProLon®</a>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="siteNavigation">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+<div id="menuOverlay"></div>
     <!-- Header -->
     
 
@@ -269,7 +271,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   <p><strong>Vuoi una panoramica completa su ProLon®?</strong><br>
   In questa guida spieghiamo il funzionamento scientifico del protocollo.
   Se invece vuoi vedere <strong>prezzi, opinioni reali e risultati</strong>, consulta la guida completa:</p>
-  <p><a href="/" class="cta-link">👉 Guida completa su ProLon®</a></p>
+  <p><a href="index.html" class="cta-link">👉 Guida completa su ProLon®</a></p>
 </div>
 
             <p><strong>Differenza Chiave:</strong> A differenza di una dieta ipocalorica generica, il ProLon® è formulato con precisione per mantenere il corpo in uno stato nutrizionale che non attiva i percorsi di segnalazione della crescita (come mTOR e IGF-1), tipicamente attivati dall'assunzione di proteine e zuccheri, ma che al contempo non innesca la risposta di fame e stress associata al digiuno totale [3].</p>
@@ -297,7 +299,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <p>Il processo cellulare più importante che il ProLon® mira ad attivare è l'<strong>autofagia</strong> (dal greco "auto-mangiare"). L'autofagia è un meccanismo di "pulizia" cellulare in cui le cellule degradano e riciclano i componenti danneggiati, contribuendo al rinnovamento cellulare e alla salute generale.</p>
 
-            <p>Si ritiene che l'attivazione di questo <a href="/#faq">processo di autofagia</a> sia cruciale per i benefici sulla longevità e sulla salute metabolica [5]. Il ProLon® è specificamente formulato per prolungare questo stato di rigenerazione cellulare oltre le prime 12-18 ore, tipiche del digiuno intermittente, estendendolo per tutti i 5 giorni.</p>
+            <p>Si ritiene che l'attivazione di questo <a href="index.html#faq">processo di autofagia</a> sia cruciale per i benefici sulla longevità e sulla salute metabolica [5]. Il ProLon® è specificamente formulato per prolungare questo stato di rigenerazione cellulare oltre le prime 12-18 ore, tipiche del digiuno intermittente, estendendolo per tutti i 5 giorni.</p>
 
             <!-- Section 3 -->
             <h2 id="sezione-3">3. La Struttura del Programma ProLon®: Giorno per Giorno</h2>
@@ -388,12 +390,12 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <p>Durante i 5 giorni, alcuni utenti possono sperimentare effetti collaterali lievi e temporanei, come mal di testa, vertigini, stanchezza o difficoltà di concentrazione, soprattutto nei primi giorni, quando il corpo sta effettuando il cambio metabolico.</p>
 
-            <p>Per maggiori dettagli su controindicazioni, sicurezza e gestione degli effetti collaterali, si prega di consultare la nostra sezione <a href="/#faq">FAQ / sicurezza / effetti collaterali</a> [8].</p>
+            <p>Per maggiori dettagli su controindicazioni, sicurezza e gestione degli effetti collaterali, si prega di consultare la nostra sezione <a href="index.html#faq">FAQ / sicurezza / effetti collaterali</a> [8].</p>
 
             <!-- Section 6 -->
             <h2 id="sezione-6">6. ProLon® vs. Digiuno Intermittente Tradizionale</h2>
             
-            <p>La Dieta Mima Digiuno (DMD) si posiziona come un approccio intermedio tra il digiuno a sola acqua e il <a href="/digiuno-intermittente-come-funziona">Digiuno Intermittente Tradizionale</a> (IF).</p>
+            <p>La Dieta Mima Digiuno (DMD) si posiziona come un approccio intermedio tra il digiuno a sola acqua e il <a href="digiuno-intermittente-come-funziona.html">Digiuno Intermittente Tradizionale</a> (IF).</p>
 		
 		<div class="table-scroll">
             <table>
@@ -460,7 +462,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   </p>
 </div>
 
-<p>Se il tuo obiettivo è un programma di digiuno strutturato e validato, il <a href="/">ProLon® Kit</a> offre un percorso chiaro e supportato.</p>
+<p>Se il tuo obiettivo è un programma di digiuno strutturato e validato, il <a href="index.html">ProLon® Kit</a> offre un percorso chiaro e supportato.</p>
 
             <!-- Section 8 -->
             <h2 id="sezione-8">8. Conclusioni e Prossimi Passi</h2>
@@ -496,17 +498,17 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <h2 class="section-title">Articoli Correlati</h2>
             <div class="articles-grid">
-                <a href="/dieta-mima-digiuno-schema-5-giorni" class="article-card">
+                <a href="dieta-mima-digiuno-schema-5-giorni.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Schema dei 5 Giorni Spiegato Passo per Passo</h3>
                     <p>La guida pratica allo schema alimentare dei 5 giorni della Dieta Mima Digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno" class="article-card">
+                <a href="dieta-mima-digiuno.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Guida Completa, Benefici e Schema dei 5 Giorni</h3>
                     <p>Tutto quello que devi sapere sulla DMD: benefici, scienza e applicazione.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/digiuno-intermittente-benefici" class="article-card">
+                <a href="digiuno-intermittente-benefici.html" class="article-card">
                     <h3>Digiuno Intermittente: Guida Completa su Benefici e Funzionamento</h3>
                     <p>Esplora i vantaggi del digiuno intermittente per la salute e la longevità.</p>
                     <span class="read-more">Leggi di più</span>
@@ -518,7 +520,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-					<h3><a href="/" class="footer-logo">Digiuno 5 Giorni</a></h3>
+					<h3><a href="index.html" class="footer-logo">Digiuno 5 Giorni</a></h3>
 					<p>Il tuo partner informativo indipendente per il ProLon® Kit e la Dieta Mima Digiuno.</p>
 					<p class="affiliate-notice">
 					<strong>Avviso:</strong> Questo è un sito web affiliato indipendente. Potremmo ricevere una commissione se acquisti tramite i nostri link sul sito ufficiale ProLon.
@@ -528,20 +530,20 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
                 <div class="footer-section">
                     <h4>Informazioni Legali</h4>
                     <ul>
-                        <li><a href="/note-legali">Note Legali</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/termini-e-condizioni">Termini e Condizioni</a></li>
+                        <li><a href="note-legali.html">Note Legali</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termini-e-condizioni.html">Termini e Condizioni</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Informazioni</h4>
                     <ul>
-                        <li><a href="/#benefits">Benefici</a></li>
-                        <li><a href="/#ingredients">Programma</a></li>
-                        <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-                        <li><a href="/#faq">FAQ</a></li>                        
+                        <li><a href="index.html#benefits">Benefici</a></li>
+                        <li><a href="index.html#ingredients">Programma</a></li>
+                        <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>                        
                     </ul>
                 </div>
                 
@@ -558,7 +560,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         </div>
     </footer>
 
-    <script src="/script.js" defer></script>
-    <script src="/gtag.js" async></script>
+    <script src="script.js?v=20260924" defer></script>
+    <script src="gtag.js" async></script>
 </body>
 </html>

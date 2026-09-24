@@ -6,22 +6,23 @@
     <title>Note Legali - ProLon®</title>
     <meta name="description" content="Note Legali per Digiuno 5 Giorni - Informazioni sul gestore del sito web affiliato ProLon®.">
 	<meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260924">
     <!-- Favicon -->
-	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="favicon.ico" sizes="any">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	
+	
+	
+<link rel="preload" href="fonts/karla-variable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
     <!-- Header -->
@@ -29,26 +30,27 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-					<a href="/" aria-label="ProLon">
+					<a href="index.html" aria-label="ProLon">
 						<span class="site-title">Digiuno 5 Giorni</span>
 					</a>
 				</div>
-                <ul class="nav-menu">
-                    <li><a href="/#benefits">Benefici</a></li>
-                    <li><a href="/#ingredients">Programma</a></li>
-                    <li><a href="/#science">Scienza</a></li>
-					<li><a href="/#recensioni">Recensioni</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
-                </ul>
+                <ul class="nav-menu" id="siteNavigation">
+                    <li><a href="index.html#benefits">Benefici</a></li>
+                    <li><a href="index.html#ingredients">Programma</a></li>
+                    <li><a href="index.html#science">Scienza</a></li>
+					<li><a href="index.html#recensioni">Recensioni</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li></ul>
                 <a href="https://prolon.it/C4Gg3l" class="header-cta-btn" target="_blank" rel="noopener nofollow sponsored">Scopri ProLon®</a>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="siteNavigation">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+<div id="menuOverlay"></div>
 
     <main class="legal-page">
         <div class="container">
@@ -138,7 +140,7 @@ Il nostro indirizzo e-mail si trova sopra, nella sezione Contatto.
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-					<h3><a href="/" class="footer-logo">Digiuno 5 Giorni</a></h3>
+					<h3><a href="index.html" class="footer-logo">Digiuno 5 Giorni</a></h3>
 					<p>Il tuo partner informativo indipendente per il ProLon® Kit e la Dieta Mima Digiuno.</p>
 					<p class="affiliate-notice">
 					<stro<strong>Avviso:</strong> Questo è un sito web affiliato indipendente. Potremmo ricevere una commissione se acquisti tramite i nostri link sul sito ufficiale ProLon..
@@ -148,20 +150,20 @@ Il nostro indirizzo e-mail si trova sopra, nella sezione Contatto.
                 <div class="footer-section">
                     <h4>Informazioni Legali</h4>
                     <ul>
-                        <li><a href="/note-legali">Note Legali</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/termini-e-condizioni">Termini e Condizioni</a></li>
+                        <li><a href="note-legali.html">Note Legali</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termini-e-condizioni.html">Termini e Condizioni</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Informationen</h4>
                     <ul>
-                        <li><a href="/#benefits">Benefici</a></li>
-                        <li><a href="/#ingredients">Programma</a></li>
-                        <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-						<li><a href="/#faq">FAQ</a></li> 
+                        <li><a href="index.html#benefits">Benefici</a></li>
+                        <li><a href="index.html#ingredients">Programma</a></li>
+                        <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+						<li><a href="index.html#faq">FAQ</a></li> 
                     </ul>
                 </div>
                 
@@ -178,6 +180,6 @@ Il nostro indirizzo e-mail si trova sopra, nella sezione Contatto.
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="script.js?v=20260924"></script>
 </body>
 </html>

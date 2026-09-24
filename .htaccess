@@ -7,6 +7,7 @@ RewriteEngine On
 # ===================================================================
 # FORÇAR HTTPS E REMOVER WWW
 # ===================================================================
+RewriteCond %{HTTP_HOST} ^(?:www\.)?digiuno5giorni\.it$ [NC]
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.digiuno5giorni\.it$ [NC]
 RewriteRule ^(.*)$ https://digiuno5giorni.it/$1 [R=301,L]

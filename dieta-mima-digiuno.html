@@ -8,30 +8,30 @@
 
     <!-- Canonical, Favicon, Hreflang -->
     <link rel="canonical" href="https://digiuno5giorni.it/dieta-mima-digiuno" />
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.ico" sizes="any">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
 
     <link rel="alternate" hreflang="it" href="https://digiuno5giorni.it/dieta-mima-digiuno" />
     <link rel="alternate" hreflang="x-default" href="https://digiuno5giorni.it/dieta-mima-digiuno" />
 
     <!-- Preconnect to essential third-party domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 
     <!-- Preload Google Fonts (non-blocking ) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" />
+        
     </noscript>
 
     <!-- 1. Critical CSS for instant rendering of the 'above-the-fold' content -->
@@ -124,11 +124,11 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 </style>
 
     <!-- 2. Defer loading of the full stylesheet -->
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="styles.css?v=20260924" />
 
     <!-- 3. Fallback for browsers with JavaScript disabled -->
     <noscript>
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="styles.css?v=20260924" />
     </noscript>
     
 <!-- Article Schema -->
@@ -138,7 +138,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   "@type": "Article",
   "headline": "Dieta Mima Digiuno: Guida Completa, Benefici e Schema dei 5 Giorni",
   "description": "Guida completa alla Dieta Mima Digiuno: cos’è, come funziona, schema dei 5 giorni, benefici e rischi.",
-  "image": "https://digiuno5giorni.it/images/ProLon-5-Giorni-1080.webp",
+  "image": "images/ProLon-5-Giorni-1080.webp",
   "datePublished": "2026-01-12",
   "dateModified": "2026-01-12",
   "author": {
@@ -189,32 +189,34 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 }
 </script>
 
+<link rel="preload" href="fonts/karla-variable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 <header class="header">
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-						<a href="/" aria-label="ProLon">
+						<a href="index.html" aria-label="ProLon">
 							<span class="site-title">Digiuno 5 Giorni</span>
 						</a>
 					</div>
-                <ul class="nav-menu">
-                    <li><a href="/#benefits">Benefici</a></li>
-                    <li><a href="/#ingredients">Programma</a></li>
-                    <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
-                </ul>
+                <ul class="nav-menu" id="siteNavigation">
+                    <li><a href="index.html#benefits">Benefici</a></li>
+                    <li><a href="index.html#ingredients">Programma</a></li>
+                    <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li></ul>
                 <a href="https://prolon.it/C4Gg3l" class="header-cta-btn" target="_blank" rel="noopener nofollow sponsored">Scopri ProLon®</a>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="siteNavigation">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+<div id="menuOverlay"></div>
     <!-- Header -->
     
 
@@ -261,7 +263,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 				<p><strong>Nota importante:</strong> La Dieta Mima Digiuno è un protocollo scientifico preciso.
 					Per comprenderne l’applicazione pratica reale e clinicamente testata, consulta la guida completa:</p>
 
-					<a href="/come-funziona-prolon" class="cta-link">
+					<a href="come-funziona-prolon.html" class="cta-link">
 					👉 Come funziona ProLon®
 					</a>
 			</div>
@@ -276,7 +278,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <!-- Section 4 -->
             <h2 id="sezione-4">4. Valter Longo e la ricerca scientifica</h2>
-            <p>La ricerca di Valter Longo si focalizza sui meccanismi molecolari dell'invecchiamento e sulle malattie correlate. I suoi studi, pubblicati su prestigiose riviste come Cell e Science Translational Medicine, hanno dimostrato come cicli periodici di DMD possano promuovere la rigenerazione cellulare e migliorare i marcatori di salute. Per approfondire la sua figura, puoi consultare la nostra pagina su <a href="/valter-longo-dieta">Valter Longo e la sua dieta</a>.</p>
+            <p>La ricerca di Valter Longo si focalizza sui meccanismi molecolari dell'invecchiamento e sulle malattie correlate. I suoi studi, pubblicati su prestigiose riviste come Cell e Science Translational Medicine, hanno dimostrato come cicli periodici di DMD possano promuovere la rigenerazione cellulare e migliorare i marcatori di salute. Per approfondire la sua figura, puoi consultare la nostra pagina su <a href="valter-longo-dieta.html">Valter Longo e la sua dieta</a>.</p>
 
             <!-- Section 5 -->
             <h2 id="sezione-5">5. Come funziona la Dieta Mima Digiuno</h2>
@@ -284,7 +286,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <!-- Section 6 -->
             <h2 id="sezione-6">6. Differenze con il Digiuno Intermittente</h2>
-            <p>Mentre il <a href="/digiuno-intermittente-come-funziona">digiuno intermittente</a> si concentra su finestre temporali giornaliere (come il 16:8), la Dieta Mima Digiuno è un intervento prolungato di 5 giorni che agisce più in profondità sui processi di rigenerazione sistemica. L'IF è uno stile di vita quotidiano, la DMD è un "reset" periodico da effettuare poche volte l'anno.</p>
+            <p>Mentre il <a href="digiuno-intermittente-come-funziona.html">digiuno intermittente</a> si concentra su finestre temporali giornaliere (come il 16:8), la Dieta Mima Digiuno è un intervento prolungato di 5 giorni che agisce più in profondità sui processi di rigenerazione sistemica. L'IF è uno stile di vita quotidiano, la DMD è un "reset" periodico da effettuare poche volte l'anno.</p>
 
             <!-- Section 7 -->
             <h2 id="sezione-7">7. Schema della Dieta Mima Digiuno</h2>
@@ -292,7 +294,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <!-- Section 8 -->
             <h2 id="sezione-8">8. Schema dei 5 giorni</h2>
-            <p>Ogni giorno del protocollo ha un obiettivo specifico, dalla transizione metabolica all'attivazione massiva dell'autofagia e della rigenerazione staminale. Per un dettaglio analitico di cosa mangiare e come organizzarsi, visita la nostra guida allo <a href="/dieta-mima-digiuno-schema-5-giorni">schema dei 5 giorni della Dieta Mima Digiuno</a>.</p>
+            <p>Ogni giorno del protocollo ha un obiettivo specifico, dalla transizione metabolica all'attivazione massiva dell'autofagia e della rigenerazione staminale. Per un dettaglio analitico di cosa mangiare e come organizzarsi, visita la nostra guida allo <a href="dieta-mima-digiuno-schema-5-giorni.html">schema dei 5 giorni della Dieta Mima Digiuno</a>.</p>
 
             <!-- Section 9 -->
             <h2 id="sezione-9">9. Benefici potenziali</h2>
@@ -312,8 +314,8 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <!-- Section 13 -->
             <h2 id="sezione-13">13. Dieta Mima Digiuno e protocollo ProLon</h2>
-            <p>Il kit ProLon® è l'unico programma alimentare clinicamente testato per simulare il digiuno. Contiene tutto il necessario per i 5 giorni: zuppe, barrette, bevande e integratori, formulati con precisione millimetrica. Scopri di più su <a href="/come-funziona-prolon">come funziona ProLon</a>.</p>
-			<p>Per una panoramica completa su benefici, opinioni, risultati e modalità di utilizzo, puoi visitare anche la nostra <a href="/">review completa di ProLon®</a>.</p>
+            <p>Il kit ProLon® è l'unico programma alimentare clinicamente testato per simulare il digiuno. Contiene tutto il necessario per i 5 giorni: zuppe, barrette, bevande e integratori, formulati con precisione millimetrica. Scopri di più su <a href="come-funziona-prolon.html">come funziona ProLon</a>.</p>
+			<p>Per una panoramica completa su benefici, opinioni, risultati e modalità di utilizzo, puoi visitare anche la nostra <a href="index.html">review completa di ProLon®</a>.</p>
 			<div class="cta-box">
 				<p>Se desideri seguire la Dieta Mima Digiuno in modo sicuro, strutturato e clinicamente testato, il programma ufficiale è ProLon®.</p>
 
@@ -350,17 +352,17 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <h2 class="section-title">Articoli Correlati</h2>
             <div class="articles-grid">
-                <a href="/come-funziona-prolon" class="article-card">
+                <a href="come-funziona-prolon.html" class="article-card">
                     <h3>ProLon: come funziona davvero la dieta mima digiuno (5 giorni)</h3>
                     <p>Scopri il funzionamento dettagliato del kit ProLon e come simula il digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno-schema-5-giorni" class="article-card">
+                <a href="dieta-mima-digiuno-schema-5-giorni.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Schema dei 5 Giorni Spiegato Passo per Passo</h3>
                     <p>La guida pratica allo schema alimentare dei 5 giorni della Dieta Mima Digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/digiuno-intermittente-benefici" class="article-card">
+                <a href="digiuno-intermittente-benefici.html" class="article-card">
                     <h3>Digiuno Intermittente: Guida Completa su Benefici e Funzionamento</h3>
                     <p>Esplora i vantaggi del digiuno intermittente per la salute e la longevità.</p>
                     <span class="read-more">Leggi di più</span>
@@ -372,7 +374,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-						<h3><a href="/" class="footer-logo">Digiuno 5 Giorni</a></h3>
+						<h3><a href="index.html" class="footer-logo">Digiuno 5 Giorni</a></h3>
 						<p>Il tuo partner informativo indipendente per il ProLon® Kit e la Dieta Mima Digiuno.</p>
 						<p class="affiliate-notice">
 						<strong>Avviso:</strong> Questo è un sito web affiliato indipendente. Potremmo ricevere una commissione se acquisti tramite i nostri link sul sito ufficiale ProLon.
@@ -382,20 +384,20 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
                 <div class="footer-section">
                     <h4>Informazioni Legali</h4>
                     <ul>
-                        <li><a href="/note-legali">Note Legali</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/termini-e-condizioni">Termini e Condizioni</a></li>
+                        <li><a href="note-legali.html">Note Legali</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termini-e-condizioni.html">Termini e Condizioni</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Informazioni</h4>
                     <ul>
-                        <li><a href="/#benefits">Benefici</a></li>
-                        <li><a href="/#ingredients">Programma</a></li>
-                        <li><a href="/#science">Scienza</a></li>
-							<li><a href="/#recensioni">Recensioni</a></li>
-                        <li><a href="/#faq">FAQ</a></li>                        
+                        <li><a href="index.html#benefits">Benefici</a></li>
+                        <li><a href="index.html#ingredients">Programma</a></li>
+                        <li><a href="index.html#science">Scienza</a></li>
+							<li><a href="index.html#recensioni">Recensioni</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>                        
                     </ul>
                 </div>
                 
@@ -412,7 +414,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         </div>
     </footer>
 
-    <script src="/script.js" defer></script>
-    <script src="/gtag.js" async></script>
+    <script src="script.js?v=20260924" defer></script>
+    <script src="gtag.js" async></script>
 </body>
 </html>

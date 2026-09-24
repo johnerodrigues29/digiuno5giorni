@@ -8,30 +8,30 @@
 
     <!-- Canonical, Favicon, Hreflang -->
     <link rel="canonical" href="https://digiuno5giorni.it/prolon-funziona-davvero" />
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.ico" sizes="any">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
 
     <link rel="alternate" hreflang="it" href="https://digiuno5giorni.it/prolon-funziona-davvero" />
     <link rel="alternate" hreflang="x-default" href="https://digiuno5giorni.it/prolon-funziona-davvero" />
 
     <!-- Preconnect to essential third-party domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 
     <!-- Preload Google Fonts (non-blocking ) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" />
+        
     </noscript>
 
     <!-- 1. Critical CSS for instant rendering of the \'above-the-fold\' content -->
@@ -124,11 +124,11 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 </style>
 
     <!-- 2. Defer loading of the full stylesheet -->
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="styles.css?v=20260924" />
 
     <!-- 3. Fallback for browsers with JavaScript disabled -->
     <noscript>
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="styles.css?v=20260924" />
     </noscript>
     
 <!-- Article Schema -->
@@ -138,7 +138,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   "@type": "Article",
   "headline": "ProLon funziona davvero? Analisi Scientifica e Benefici della Dieta Mima Digiuno",
   "description": "Scopri se ProLon funziona davvero. Analisi oggettiva della Dieta Mima Digiuno, benefici scientifici, limiti e considerazioni importanti per la tua salute.",
-  "image": "https://digiuno5giorni.it/images/ProLon-5-Giorni-1080.webp",
+  "image": "images/ProLon-5-Giorni-1080.webp",
   "datePublished": "2026-01-09",
   "dateModified": "2026-01-09",
   "author": {
@@ -197,6 +197,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 }
 </script>
 
+<link rel="preload" href="fonts/karla-variable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
@@ -204,26 +205,27 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-						<a href="/" aria-label="ProLon">
+						<a href="index.html" aria-label="ProLon">
 							<span class="site-title">Digiuno 5 Giorni</span>
 						</a>
 					</div>
-                <ul class="nav-menu">
-                    <li><a href="/#benefits">Benefici</a></li>
-                    <li><a href="/#ingredients">Programma</a></li>
-                    <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
-                </ul>
+                <ul class="nav-menu" id="siteNavigation">
+                    <li><a href="index.html#benefits">Benefici</a></li>
+                    <li><a href="index.html#ingredients">Programma</a></li>
+                    <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li></ul>
                 <a href="https://prolon.it/C4Gg3l" class="header-cta-btn" target="_blank" rel="noopener nofollow sponsored">Scopri ProLon®</a>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="siteNavigation">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+<div id="menuOverlay"></div>
 
     <!-- Article Hero Section -->
 
@@ -260,7 +262,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
 <p>Nel panorama delle strategie per il benessere e la longevità, la Dieta Mima Digiuno (DMD), e in particolare il programma ProLon®, ha guadagnato notevole attenzione. Ma la domanda che molti si pongono è: <strong>ProLon funziona davvero?</strong> Questo articolo si propone di esplorare in modo obiettivo il funzionamento di ProLon, analizzando la scienza che lo supporta, i suoi benefici, le limitazioni e le considerazioni importanti per chi valuta di intraprendere questo percorso nutrizionale.</p>
 
-<p>ProLon® è un programma nutrizionale di 5 giorni, clinicamente testato, progettato per indurre uno stato di digiuno nel corpo pur fornendo un apporto calorico e nutrizionale specifico. Non si tratta di un digiuno a sola acqua, ma di un regime alimentare brevettato noto come <strong>Dieta Mima Digiuno (DMD)</strong> o <em>Fasting Mimicking Diet</em> (FMD). Sviluppato dal Professor Valter Longo, uno dei massimi esperti mondiali di longevità, l'obiettivo della DMD è quello di “ingannare” l’organismo, facendogli credere di essere in uno stato di digiuno prolungato, senza la totale privazione di cibo. Per una spiegazione più approfondita su <strong><a href="/come-funziona-prolon">come funziona ProLon</a></strong>, è possibile consultare il nostro articolo dedicato.</p>
+<p>ProLon® è un programma nutrizionale di 5 giorni, clinicamente testato, progettato per indurre uno stato di digiuno nel corpo pur fornendo un apporto calorico e nutrizionale specifico. Non si tratta di un digiuno a sola acqua, ma di un regime alimentare brevettato noto come <strong>Dieta Mima Digiuno (DMD)</strong> o <em>Fasting Mimicking Diet</em> (FMD). Sviluppato dal Professor Valter Longo, uno dei massimi esperti mondiali di longevità, l'obiettivo della DMD è quello di “ingannare” l’organismo, facendogli credere di essere in uno stato di digiuno prolungato, senza la totale privazione di cibo. Per una spiegazione più approfondita su <strong><a href="come-funziona-prolon.html">come funziona ProLon</a></strong>, è possibile consultare il nostro articolo dedicato.</p>
 
 <h2 id="come-funziona-prolon-nel-corpo">Come Funziona ProLon nel Corpo</h2>
 
@@ -284,7 +286,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
 <p>Alla luce delle evidenze, la risposta è sì, <strong>ProLon funziona</strong>, ma è fondamentale capire <em>per cosa</em> funziona e a quali condizioni. Il suo scopo primario non è la perdita di peso rapida, sebbene questa sia una conseguenza comune (in media 2,6 kg dopo 3 cicli). L'obiettivo principale è un "reset" biologico che promuove il ringiovanimento cellulare e migliora i marcatori di salute metabolica.</p>
 
-<p>Il programma funziona perché è un protocollo standardizzato e clinicamente testato che guida il corpo in uno stato di digiuno controllato, massimizzando i benefici dell'autofagia e della rigenerazione cellulare, minimizzando al contempo i rischi e la difficoltà di un digiuno a sola acqua. A differenza del <strong><a href="/digiuno-intermittente-come-funziona">digiuno intermittente come funziona</a></strong>, che è una pratica più blanda e quotidiana, ProLon è un intervento periodico e più profondo.</p>
+<p>Il programma funziona perché è un protocollo standardizzato e clinicamente testato che guida il corpo in uno stato di digiuno controllato, massimizzando i benefici dell'autofagia e della rigenerazione cellulare, minimizzando al contempo i rischi e la difficoltà di un digiuno a sola acqua. A differenza del <strong><a href="digiuno-intermittente-come-funziona.html">digiuno intermittente come funziona</a></strong>, che è una pratica più blanda e quotidiana, ProLon è un intervento periodico e più profondo.</p>
 
 <h2 id="per-chi-prolon-puo-funzionare">Per Chi ProLon Può Funzionare</h2>
 
@@ -333,11 +335,11 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
 <h2 id="prolon-funziona-per-tutti">ProLon Funziona per Tutti?</h2>
 
-<p>La risposta è no. Sebbene ProLon offra benefici significativi per molti, non è una soluzione universale. La sua efficacia dipende da diversi fattori individuali, tra cui lo stato di salute di partenza, lo stile di vita e l'aderenza al protocollo. Non è inteso come una dieta per la perdita di peso a lungo termine, ma come un intervento periodico per promuovere la salute metabolica e cellulare. Per chi cerca una gestione del peso quotidiana, il <strong><a href="/digiuno-intermittente-come-funziona">digiuno intermittente</a></strong> potrebbe essere un approccio più adatto e sostenibile.</p>
+<p>La risposta è no. Sebbene ProLon offra benefici significativi per molti, non è una soluzione universale. La sua efficacia dipende da diversi fattori individuali, tra cui lo stato di salute di partenza, lo stile di vita e l'aderenza al protocollo. Non è inteso come una dieta per la perdita di peso a lungo termine, ma come un intervento periodico per promuovere la salute metabolica e cellulare. Per chi cerca una gestione del peso quotidiana, il <strong><a href="digiuno-intermittente-come-funziona.html">digiuno intermittente</a></strong> potrebbe essere un approccio più adatto e sostenibile.</p>
 
 <h2 id="quando-prolon-e-una-scelta-strutturata">Quando ProLon è una Scelta Strutturata</h2>
 
-<p>ProLon rappresenta una scelta intelligente e strutturata per chi desidera integrare nella propria routine un protocollo di digiuno mimetico validato scientificamente. È ideale per chi cerca un metodo sicuro e guidato per accedere ai benefici del digiuno prolungato, senza i rischi e le difficoltà del digiuno a sola acqua. La sua formulazione precisa e il supporto clinico lo rendono un'opzione affidabile per un "reset" metabolico periodico. Per approfondire ulteriormente il <strong><a href="/come-funziona-prolon">funzionamento di ProLon</a></strong> e i dettagli del programma, si consiglia di consultare l'articolo dedicato.</p>
+<p>ProLon rappresenta una scelta intelligente e strutturata per chi desidera integrare nella propria routine un protocollo di digiuno mimetico validato scientificamente. È ideale per chi cerca un metodo sicuro e guidato per accedere ai benefici del digiuno prolungato, senza i rischi e le difficoltà del digiuno a sola acqua. La sua formulazione precisa e il supporto clinico lo rendono un'opzione affidabile per un "reset" metabolico periodico. Per approfondire ulteriormente il <strong><a href="come-funziona-prolon.html">funzionamento di ProLon</a></strong> e i dettagli del programma, si consiglia di consultare l'articolo dedicato.</p>
 
 <!-- References Section -->
 <div class="references">
@@ -359,17 +361,17 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <h2 class="section-title">Articoli Correlati</h2>
             <div class="articles-grid">
-                <a href="/come-funziona-prolon" class="article-card">
+                <a href="come-funziona-prolon.html" class="article-card">
                     <h3>ProLon: come funziona davvero la dieta mima digiuno (5 giorni)</h3>
                     <p>Scopri il funzionamento dettagliato del kit ProLon e come simula il digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno-schema-5-giorni" class="article-card">
+                <a href="dieta-mima-digiuno-schema-5-giorni.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Schema dei 5 Giorni Spiegato Passo per Passo</h3>
                     <p>La guida pratica allo schema alimentare dei 5 giorni della Dieta Mima Digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno" class="article-card">
+                <a href="dieta-mima-digiuno.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Guida Completa, Benefici e Schema dei 5 Giorni</h3>
                     <p>Tutto quello que devi sapere sulla DMD: benefici, scienza e applicazione.</p>
                     <span class="read-more">Leggi di più</span>
@@ -381,7 +383,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-					<h3><a href="/" class="footer-logo">Digiuno 5 Giorni</a></h3>
+					<h3><a href="index.html" class="footer-logo">Digiuno 5 Giorni</a></h3>
 					<p>Il tuo partner informativo indipendente per il ProLon® Kit e la Dieta Mima Digiuno.</p>
 					<p class="affiliate-notice">
 					<strong>Avviso:</strong> Questo è un sito web affiliato indipendente. Potremmo ricevere una commissione se acquisti tramite i nostri link sul sito ufficiale ProLon.
@@ -391,20 +393,20 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
                 <div class="footer-section">
                     <h4>Informazioni Legali</h4>
                     <ul>
-                        <li><a href="/note-legali">Note Legali</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/termini-e-condizioni">Termini e Condizioni</a></li>
+                        <li><a href="note-legali.html">Note Legali</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termini-e-condizioni.html">Termini e Condizioni</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Informazioni</h4>
                     <ul>
-                        <li><a href="/#benefits">Benefici</a></li>
-                        <li><a href="/#ingredients">Programma</a></li>
-                        <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-                        <li><a href="/#faq">FAQ</a></li>                        
+                        <li><a href="index.html#benefits">Benefici</a></li>
+                        <li><a href="index.html#ingredients">Programma</a></li>
+                        <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>                        
                     </ul>
                 </div>
                 
@@ -421,7 +423,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         </div>
     </footer>
 
-    <script src="/script.js" defer></script>
-    <script src="/gtag.js" async></script>
+    <script src="script.js?v=20260924" defer></script>
+    <script src="gtag.js" async></script>
 </body>
 </html>

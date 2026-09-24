@@ -8,30 +8,30 @@
 
     <!-- Canonical, Favicon, Hreflang -->
     <link rel="canonical" href="https://digiuno5giorni.it/digiuno-intermittente-come-funziona" />
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.ico" sizes="any">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
 
     <link rel="alternate" hreflang="it" href="https://digiuno5giorni.it/digiuno-intermittente-come-funziona" />
     <link rel="alternate" hreflang="x-default" href="https://digiuno5giorni.it/digiuno-intermittente-come-funziona" />
 
     <!-- Preconnect to essential third-party domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 
     <!-- Preload Google Fonts (non-blocking ) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" />
+        
     </noscript>
 
     <!-- 1. Critical CSS for instant rendering of the 'above-the-fold' content -->
@@ -124,11 +124,11 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 </style>
 
     <!-- 2. Defer loading of the full stylesheet -->
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="styles.css?v=20260924" />
 
     <!-- 3. Fallback for browsers with JavaScript disabled -->
     <noscript>
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="styles.css?v=20260924" />
     </noscript>
     
 <!-- Article Schema -->
@@ -138,7 +138,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
   "@type": "Article",
   "headline": "Digiuno intermittente: come funziona davvero? Benefici e schema",
   "description": "Scopri il digiuno intermittente: meccanismi, protocolli (16:8, 5:2) e benefici supportati dalla scienza. Una guida neutrale e completa per la tua salute.",
-  "image": "https://digiuno5giorni.it/images/ProLon-5-Giorni-1080.webp",
+  "image": "images/ProLon-5-Giorni-1080.webp",
   "datePublished": "2025-12-26",
   "dateModified": "2025-12-26",
   "author": {
@@ -189,32 +189,34 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 }
 </script>
 
+<link rel="preload" href="fonts/karla-variable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 <header class="header">
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-					<a href="/" aria-label="ProLon">
+					<a href="index.html" aria-label="ProLon">
 						<span class="site-title">Digiuno 5 Giorni</span>
 					</a>
 				</div>
-                <ul class="nav-menu">
-                    <li><a href="/#benefits">Benefici</a></li>
-                    <li><a href="/#ingredients">Programma</a></li>
-                    <li><a href="/#science">Scienza</a></li>
-					<li><a href="/#recensioni">Recensioni</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
-                </ul>
+                <ul class="nav-menu" id="siteNavigation">
+                    <li><a href="index.html#benefits">Benefici</a></li>
+                    <li><a href="index.html#ingredients">Programma</a></li>
+                    <li><a href="index.html#science">Scienza</a></li>
+					<li><a href="index.html#recensioni">Recensioni</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li></ul>
                 <a href="https://prolon.it/C4Gg3l" class="header-cta-btn" target="_blank" rel="noopener nofollow sponsored">Scopri ProLon®</a>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="siteNavigation">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+<div id="menuOverlay"></div>
     <!-- Header -->
     
 
@@ -283,7 +285,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <p>Forse il meccanismo più studiato e affascinante del digiuno è l'<strong>autofagia</strong> (dal greco "auto-mangiare"). L'autofagia è un processo cellulare in cui le cellule degradano e riciclano componenti danneggiati o non necessari, come proteine mal ripiegate e organelli vecchi. È essenzialmente il sistema di pulizia e rinnovamento cellulare del corpo.</p>
 
-            <p>Si ritiene che l'attivazione di questo <a href="/#faq">processo di autofagia</a> sia fondamentale per i potenziali benefici sulla longevità e sulla prevenzione delle malattie [5]. L'autofagia si attiva in modo significativo durante i periodi di carenza nutrizionale, come il digiuno.</p>
+            <p>Si ritiene che l'attivazione di questo <a href="index.html#faq">processo di autofagia</a> sia fondamentale per i potenziali benefici sulla longevità e sulla prevenzione delle malattie [5]. L'autofagia si attiva in modo significativo durante i periodi di carenza nutrizionale, come il digiuno.</p>
 
             <!-- Section 3 -->
             <h2 id="sezione-3">3. I Principali Protocolli di Digiuno Intermittente</h2>
@@ -367,12 +369,12 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
 
             <p>È un errore comune pensare che il digiuno intermittente dia "carta bianca" per mangiare qualsiasi cosa durante la finestra di alimentazione. Per ottenere benefici reali, è essenziale che i pasti consumati siano <strong>nutrizionalmente densi ed equilibrati</strong>. La qualità del cibo è sempre prioritaria rispetto al solo <em>timing</em> [10].</p>
 
-            <p>Per maggiori informazioni su controindicazioni e sicurezza, si consiglia di consultare la nostra sezione <a href="/#faq">FAQ / sicurezza / effetti collaterali</a> [11].</p>
+            <p>Per maggiori informazioni su controindicazioni e sicurezza, si consiglia di consultare la nostra sezione <a href="index.html#faq">FAQ / sicurezza / effetti collaterali</a> [11].</p>
 
             <!-- Section 6 -->
             <h2 id="sezione-6">6. Digiuno Intermittente Tradizionale vs. Dieta Mima Digiuno (ProLon®)</h2>
             
-            <p>Quando si parla di digiuno, è importante distinguere tra il digiuno intermittente tradizionale e la <strong>Dieta Mima Digiuno (DMD)</strong>, di cui il <a href="/">ProLon® Kit</a> è l'unico programma clinicamente testato.</p>
+            <p>Quando si parla di digiuno, è importante distinguere tra il digiuno intermittente tradizionale e la <strong>Dieta Mima Digiuno (DMD)</strong>, di cui il <a href="index.html">ProLon® Kit</a> è l'unico programma clinicamente testato.</p>
 
 		<div class="table-scroll">
             <table>
@@ -413,12 +415,12 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
             </table>
 		</div>
 		
-            <p>La <strong>differenza fondamentale</strong> risiede nel fatto che, mentre il digiuno intermittente tradizionale richiede l'astensione totale dal cibo per ore, la Dieta Mima Digiuno (DMD) è stata sviluppata per ingannare il corpo, facendogli credere di essere in uno stato di digiuno, pur fornendo nutrienti specifici. Questo permette di accedere ai benefici del digiuno in modo più controllato e gestibile. Per capire <a href="/come-funziona-prolon">come funziona ProLon</a>, è essenziale comprendere questa distinzione.</p>
+            <p>La <strong>differenza fondamentale</strong> risiede nel fatto che, mentre il digiuno intermittente tradizionale richiede l'astensione totale dal cibo per ore, la Dieta Mima Digiuno (DMD) è stata sviluppata per ingannare il corpo, facendogli credere di essere in uno stato di digiuno, pur fornendo nutrienti specifici. Questo permette di accedere ai benefici del digiuno in modo più controllato e gestibile. Per capire <a href="come-funziona-prolon.html">come funziona ProLon</a>, è essenziale comprendere questa distinzione.</p>
 
             <!-- Section 7 -->
             <h2 id="sezione-7">7. Quando Considerare ProLon® Kit come Alternativa Strutturata</h2>
             
-            <p>Il <a href="/">ProLon® Kit</a> rappresenta un'opzione per coloro che desiderano sperimentare i benefici del digiuno, ma cercano un approccio scientificamente validato, sicuro e altamente strutturato.</p>
+            <p>Il <a href="index.html">ProLon® Kit</a> rappresenta un'opzione per coloro che desiderano sperimentare i benefici del digiuno, ma cercano un approccio scientificamente validato, sicuro e altamente strutturato.</p>
 
             <p>È particolarmente indicato in questi casi:</p>
             <ul>
@@ -427,7 +429,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
                 <li><strong>Massimizzazione dell'Autofagia:</strong> Essendo un programma clinicamente testato per indurre lo stato di digiuno, offre una maggiore certezza di attivare i meccanismi cellulari desiderati.</li>
             </ul>
 
-            <p>Se stai cercando un' <a href="/come-funziona-prolon">programma di digiuno strutturato ProLon</a> e basata sulla scienza per integrare i benefici del digiuno nella tua routine, il ProLon® Kit può essere la scelta giusta.</p>
+            <p>Se stai cercando un' <a href="come-funziona-prolon.html">programma di digiuno strutturato ProLon</a> e basata sulla scienza per integrare i benefici del digiuno nella tua routine, il ProLon® Kit può essere la scelta giusta.</p>
 
             <!-- Section 8 -->
             <h2 id="sezione-8">8. Conclusioni e Prossimi Passi</h2>
@@ -465,17 +467,17 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <h2 class="section-title">Articoli Correlati</h2>
             <div class="articles-grid">
-                <a href="/come-funziona-prolon" class="article-card">
+                <a href="come-funziona-prolon.html" class="article-card">
                     <h3>ProLon: come funziona davvero la dieta mima digiuno (5 giorni)</h3>
                     <p>Scopri il funzionamento dettagliato del kit ProLon e come simula il digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno-schema-5-giorni" class="article-card">
+                <a href="dieta-mima-digiuno-schema-5-giorni.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Schema dei 5 Giorni Spiegato Passo per Passo</h3>
                     <p>La guida pratica allo schema alimentare dei 5 giorni della Dieta Mima Digiuno.</p>
                     <span class="read-more">Leggi di più</span>
                 </a>
-                <a href="/dieta-mima-digiuno" class="article-card">
+                <a href="dieta-mima-digiuno.html" class="article-card">
                     <h3>Dieta Mima Digiuno: Guida Completa, Benefici e Schema dei 5 Giorni</h3>
                     <p>Tutto quello que devi sapere sulla DMD: benefici, scienza e applicazione.</p>
                     <span class="read-more">Leggi di più</span>
@@ -487,7 +489,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-					<h3><a href="/" class="footer-logo">Digiuno 5 Giorni</a></h3>
+					<h3><a href="index.html" class="footer-logo">Digiuno 5 Giorni</a></h3>
 					<p>Il tuo partner informativo indipendente per il ProLon® Kit e la Dieta Mima Digiuno.</p>
 					<p class="affiliate-notice">
 					<strong>Avviso:</strong> Questo è un sito web affiliato indipendente. Potremmo ricevere una commissione se acquisti tramite i nostri link sul sito ufficiale ProLon.
@@ -497,20 +499,20 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
                 <div class="footer-section">
                     <h4>Informazioni Legali</h4>
                     <ul>
-                        <li><a href="/note-legali">Note Legali</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/termini-e-condizioni">Termini e Condizioni</a></li>
+                        <li><a href="note-legali.html">Note Legali</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termini-e-condizioni.html">Termini e Condizioni</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Informazioni</h4>
                     <ul>
-                        <li><a href="/#benefits">Benefici</a></li>
-                        <li><a href="/#ingredients">Programma</a></li>
-                        <li><a href="/#science">Scienza</a></li>
-						<li><a href="/#recensioni">Recensioni</a></li>
-                        <li><a href="/#faq">FAQ</a></li>                        
+                        <li><a href="index.html#benefits">Benefici</a></li>
+                        <li><a href="index.html#ingredients">Programma</a></li>
+                        <li><a href="index.html#science">Scienza</a></li>
+						<li><a href="index.html#recensioni">Recensioni</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>                        
                     </ul>
                 </div>
                 
@@ -527,7 +529,7 @@ body{font-family:'Karla',sans-serif;line-height:1.6;color:#263f36;overflow-x:hid
         </div>
     </footer>
 
-    <script src="/script.js" defer></script>
-    <script src="/gtag.js" async></script>
+    <script src="script.js?v=20260924" defer></script>
+    <script src="gtag.js" async></script>
 </body>
 </html>
