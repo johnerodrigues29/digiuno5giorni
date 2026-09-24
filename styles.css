@@ -3434,3 +3434,5 @@ font-size:16px;
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 .logo .site-title{font-size:inherit}
+
+.newsletter-notice.is-success{padding:16px;border-radius:12px;background:#eef7eb;color:#1e4136;font-weight:700}.newsletter-notice.is-error{padding:14px;border-radius:12px;background:#fff0ec;color:#8b2c19}.newsletter-btn:disabled{cursor:default;opacity:.75}.newsletter-form[data-completed] .newsletter-consent,.newsletter-form[data-completed] label,.newsletter-form[data-completed] .newsletter-trust{display:none!important}

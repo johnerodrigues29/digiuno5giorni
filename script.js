@@ -90,19 +90,89 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') {setMenu(false); if (popup?.classList.contains('active')) setPopup(false);}
     if (e.key === 'Tab' && popup?.classList.contains('active')) {
       const nodes = [...popup.querySelectorAll('button, input:not([type="hidden"]):not([tabindex="-1"]), a[href]')];
-      const first = nodes[0], last = nodes[nodes.length - 1];
+      const visible = nodes.filter(node => !node.disabled && node.getClientRects().length);
+      const first = visible[0], last = visible[visible.length - 1];
       if (e.shiftKey && document.activeElement === first) {e.preventDefault(); last.focus();}
       if (!e.shiftKey && document.activeElement === last) {e.preventDefault(); first.focus();}
     }
   });
-  document.querySelectorAll('.newsletter-form').forEach(form => form.addEventListener('submit', () => {
-    // Native POST lets Mailchimp show actual validation / confirmation, including with JS disabled.
-    // A no-cors fetch cannot tell whether Mailchimp accepted an address.
-    submitted = true;
-    form.querySelector('.newsletter-notice').hidden = false;
-    track('newsletter_submit', {origin:form.closest('#exitPopup') ? 'popup' : 'page'});
-    updateScroll();
-  }));
+  let newsletterRequestId = 0;
+  function subscribe(form) {
+    return new Promise((resolve, reject) => {
+      const callback = 'newsletterResponse_' + Date.now() + '_' + (++newsletterRequestId);
+      const url = new URL(form.action);
+      url.pathname = url.pathname.replace('/post', '/post-json');
+      new FormData(form).forEach((value, key) => url.searchParams.set(key, value));
+      url.searchParams.set('c', callback);
+      const script = document.createElement('script');
+      let settled = false;
+      const cleanup = () => {
+        clearTimeout(timeout);
+        script.remove();
+        // Ignore any delayed callback after a timeout.
+        window[callback] = () => {};
+        setTimeout(() => { delete window[callback]; }, 60000);
+      };
+      const finish = (error, response) => {
+        if (settled) return;
+        settled = true;
+        cleanup();
+        error ? reject(error) : resolve(response);
+      };
+      window[callback] = response => finish(null, response);
+      script.onerror = () => finish(new Error('network'));
+      const timeout = setTimeout(() => finish(new Error('timeout')), 15000);
+      script.src = url.href;
+      script.referrerPolicy = 'no-referrer';
+      document.head.appendChild(script);
+    });
+  }
+  document.querySelectorAll('.newsletter-form').forEach(form => {
+    const button = form.querySelector('button[type="submit"]');
+    const label = button.querySelector('.btn-text');
+    const notice = form.querySelector('.newsletter-notice');
+    button.disabled = false;
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (button.disabled || !form.reportValidity()) return;
+      button.disabled = true;
+      label.textContent = 'Iscrizione in corso…';
+      notice.hidden = true;
+      notice.classList.remove('is-success', 'is-error');
+      form.setAttribute('aria-busy', 'true');
+      try {
+        const response = await subscribe(form);
+        const message = String(response?.msg || '');
+        if (response?.result !== 'success') {
+          notice.textContent = /already subscribed|già iscritt/i.test(message)
+            ? 'Questo indirizzo e-mail è già iscritto alla newsletter.'
+            : 'Iscrizione non completata. Verifica il tuo indirizzo e-mail e riprova tra qualche minuto.';
+          notice.classList.add('is-error');
+          return;
+        }
+        submitted = true;
+        const pending = /confirm|conferm|bestätig|pending|activate|attivare/i.test(message);
+        notice.textContent = pending
+          ? 'Quasi fatto! Controlla la tua e-mail e conferma l’iscrizione.'
+          : 'Iscrizione avvenuta con successo! Riceverai sconti e promozioni esclusive via e-mail.';
+        notice.classList.add('is-success');
+        form.dataset.completed = 'true';
+        label.textContent = pending ? 'Controlla la tua e-mail' : 'Iscrizione completata';
+        track('newsletter_submit', {origin:form.closest('#exitPopup') ? 'popup' : 'page'});
+        updateScroll();
+      } catch (error) {
+        notice.textContent = 'Non è stato possibile confermare l’iscrizione. Controlla la connessione e riprova.';
+        notice.classList.add('is-error');
+      } finally {
+        form.removeAttribute('aria-busy');
+        notice.hidden = false;
+        if (!form.dataset.completed) {
+          button.disabled = false;
+          label.textContent = 'Iscriviti alla newsletter';
+        }
+      }
+    });
+  });
   document.addEventListener('click', e => {
     const a = e.target.closest('a[href]');
     if (!a || new URL(a.href).hostname !== 'prolon.it') return;
